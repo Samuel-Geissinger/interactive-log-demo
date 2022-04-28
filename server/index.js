@@ -23,7 +23,7 @@ app.post("/api/student", (req, res) => {
 
   students.push(name);
   rollbar.log("Student added successfully", {
-    author: "Scott",
+    author: "Sam",
     type: "manual entry",
   });
   res.status(200).send(students);
